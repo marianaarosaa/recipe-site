@@ -9,19 +9,16 @@
 </head>
 <body>
   <div class="container">
-    <!-- Welcome Header -->
     <div class="header">
       <h1>welcome to the cozy kitchen ! ᥫ᭡</h1>
       <p>get comfy, explore the pantry, and let's find your next recipe 🥖</p>
     </div>
 
-    <!-- Recipe Randomizer -->
     <div class="randomizer">
       <button onclick="showRandomRecipe()">✨ give me a recipe! ✨</button>
       <p id="random-recipe"></p>
     </div>
 
-    <!-- Recipe Categories -->
     <div class="categories">
       <h2>explore by category ❀</h2>
       <a href="sweets.html">sweets</a>
@@ -30,7 +27,6 @@
       <a href="comfort-foods.html">comfort foods</a>
     </div>
 
-    <!-- About Me -->
     <div class="about-me">
       <button onclick="showAboutMe()">about the creator ♡</button>
       <p id="about-text">hi! i'm mariana, the cook behind this site ♡ i hope u like these recipes ! check my <a href="https://github.com/marianaarosaa">github</a> if you'd like ⋆˚✿˖°</p>
@@ -53,7 +49,6 @@
       document.getElementById("random-recipe").innerText = recipeText;
     }
 
-    // Abt Me Section
     function showAboutMe() {
       const aboutText = document.getElementById("about-text");
       aboutText.style.display = "block";
