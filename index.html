@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>recipe website</title>
+  <link href="https://fonts.cdnfonts.com/css/kinkee" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Welcome Header -->
+    <div class="header">
+      <h1>welcome to the cozy kitchen ! ᥫ᭡</h1>
+      <p>get comfy, explore the pantry, and let's find your next recipe 🥖</p>
+    </div>
+
+    <!-- Recipe Randomizer -->
+    <div class="randomizer">
+      <button onclick="showRandomRecipe()">✨ give me a recipe! ✨</button>
+      <p id="random-recipe"></p>
+    </div>
+
+    <!-- Recipe Categories -->
+    <div class="categories">
+      <h2>explore by category ❀</h2>
+      <a href="sweets.html">sweets</a>
+      <a href="warm-drinks.html">warm drinks</a>
+      <a href="quick-snacks.html">quick snacks</a>
+      <a href="comfort-foods.html">comfort foods</a>
+    </div>
+
+    <!-- About Me -->
+    <div class="about-me">
+      <button onclick="showAboutMe()">about the creator ♡</button>
+      <p id="about-text">hi! i'm mariana, the cook behind this site ♡ i hope u like these recipes ! check my <a href="https://github.com/marianaarosaa">github</a> if you'd like ⋆˚✿˖°</p>
+    </div>
+  </div>
+
+  <script>
+    // Random Recipe Functionality
+    const recipes = [
+      "you look like you need some hot apple cider today! 🍎",
+      "how about cozy lemon butter pasta? 🍋",
+      "a sweet treat? try some homemade brownies! 🍫",
+      "chilly day? let’s warm up with tomato soup 🥣",
+      "why not bake a fresh apple pie? it’s a classic for a reason! 🥧"
+    ];
+
+    function showRandomRecipe() {
+      const randomIndex = Math.floor(Math.random() * recipes.length);
+      const recipeText = recipes[randomIndex];
+      document.getElementById("random-recipe").innerText = recipeText;
+    }
+
+    // Abt Me Section
+    function showAboutMe() {
+      const aboutText = document.getElementById("about-text");
+      aboutText.style.display = "block";
+    }
+  </script>
+  <footer>
+    <p>thank you for visiting! come back soon for more cozy recipes ୧ ‧₊˚ ☁️⋅♡</p>
+  </footer>
+</body>
+</html>

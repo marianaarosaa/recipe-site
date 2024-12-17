@@ -1,0 +1,86 @@
+body {
+    background-color: #fefbe9; 
+    margin: 0;
+    font-family: 'Anek Tamil', sans-serif;
+    color: #594545;
+    text-align: center;
+    cursor: url('img/cursor.png.gif'), auto;
+  }
+  
+  .drinks-header {
+    font-family: 'Kinkee', sans-serif;
+    margin: 30px 10px;
+    color: #ff8ba7;
+  }
+  
+  .drinks-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .drinks-header p {
+    font-size: 1.2em;
+    color: #9e7f75;
+  }
+  
+  .drinks-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+  }
+  
+  .recipe-card {
+    background-color: #fff9e9; 
+    border-radius: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 15px;
+    width: 180px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .recipe-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .recipe-card h3 {
+    font-size: 1.1em;
+    color: #594545;
+  }
+  
+  .recipe-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .recipe-card:hover img {
+    transform: scale(1.1); 
+  }
+  
+  .back-home {
+    margin: 30px;
+  }
+  
+  .back-home button {
+    background-color: #ffcbcb;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #594545;
+    cursor: pointer;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-home button:hover {
+    background-color: #ff8ba7; 
+  }
+  
